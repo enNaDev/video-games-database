@@ -17,18 +17,19 @@
   <ng-container *ngFor="let game of games">
     <div class="game">
       <div class="game-thumb-container">
-        <img
-          *ngIf="game.background_image"
-          [src]="game.background_image"
-          alt="thumbnail" class="game-thumbnail">
-          <p *ngIf="!game.background_image">No image</p>
+        <img 
+          *ngIf="game.background_image" 
+          [src]="game.background_image" 
+          class="game-thumbnail"
+          alt="thumbnail" >
+        <p *ngIf="!game.background_image">No image</p>
       </div>
       <div class="game-description">
         <p class="game-name">{{ game.name }}</p>
         <div class="game-platforms">
-          <img
-            *ngFor="let gamePlatform of games.parent_platforms"
-            [src]="'assets/images/platforms/' + gamePlatform.platform.slug + '.svg'"
+          <img 
+            *ngFor="let gamePlatform of game.parent_platforms"
+            [src]="'assets/images/platforms/png/' + gamePlatform.platform.slug + '.png'" 
             class="game-platform"
             [alt]="gamePlatform.platform.slug">
         </div>
