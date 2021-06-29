@@ -1,5 +1,7 @@
 # NgVideoGame
 
+Live preview: https://ennadev.github.io/video-games-database/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
 ## Packages used
