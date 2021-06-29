@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng build --prod --baseHref='https://ennadev.github.io/video-games-database/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
