@@ -37,8 +37,8 @@ export class HttpService {
       map((resp: any) => {
         return {
           ...resp['gameInfoRequest'],
-          screenshots: resp['gameScreenshotsRequest'],
-          trailers: resp['gameTrailerRequest']
+          trailers: resp['gameTrailerRequest']['results'],
+          screenshots: resp['gameScreenshotsRequest']['results']
         };
       })
     );
